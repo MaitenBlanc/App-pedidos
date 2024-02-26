@@ -1,0 +1,142 @@
+h2 {
+  margin-top: 50px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#tarjetasContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tarjetaProductoContainer {
+  position: relative;
+  display: flex;
+  height: 100px;
+  background-color: #f7e5f5;
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+#izq {
+  width: 35%;
+  background-color: bisque;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  > div {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    img {
+      height: 20px;
+      background-color: rgba(182, 255, 180);
+      border-radius: 50%;
+    }
+  }
+}
+
+#centro {
+  width: 55%;
+}
+
+#der {
+  width: 10%;
+  align-items: flex-end;
+}
+
+#borrar {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  padding: 0;
+}
+
+#mas {
+  height: 38px;
+  font-size: xx-large;
+  text-decoration: none;
+  color: black;
+  background-color: #f7e5f5;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+#informacion {
+  font-size: larger;
+}
+
+#enviosContainer {
+  background-color: #f7e5f5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  align-items: center;
+  h4 {
+    font-size: larger;
+  }
+}
+
+#montos {
+  text-align: end;
+}
+
+#totales > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#enviar {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: larger;
+  background-color: #e8b0e1;
+  border: unset;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#boton-editar-direccion {
+  padding-right: 5px;
+}
+
+dialog {
+  background-color: #f7e5f5;
+  border-radius: 10px;
+  border: unset;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.156);
+  div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    &:first-of-type {
+      background-color: rgb(211, 255, 211);
+    }
+    &:last-of-type {
+      background-color: rgb(255, 211, 211);
+    }
+    span:first-child {
+      font-size: x-large;
+    }
+  }
+  p {
+    font-size: x-large;
+    text-align: center;
+  }
+}

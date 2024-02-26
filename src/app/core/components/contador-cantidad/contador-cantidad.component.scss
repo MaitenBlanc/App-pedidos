@@ -1,0 +1,23 @@
+$altura: 30px;
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  height: $altura;
+  background-color: #f7e5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+button {
+  border: unset;
+  font-weight: bold;
+  background-color: #e8b0e1;
+  padding: 0 10px;
+}
+
+span {
+  line-height: $altura;
+}
