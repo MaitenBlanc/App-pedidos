@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -11,7 +11,7 @@ import { ProductosService } from '../../core/services/productos.service';
 @Component({
   selector: 'app-articulo',
   standalone: true,
-  imports: [CommonModule, ContadorCantidadComponent, FormsModule],
+  imports: [ContadorCantidadComponent, FormsModule],
   templateUrl: './articulo.component.html',
   styleUrl: './articulo.component.scss',
 })

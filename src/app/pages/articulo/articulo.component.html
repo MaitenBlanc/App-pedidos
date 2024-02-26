@@ -3,19 +3,25 @@
 <section class="margenChico">
   <ul>
     <span>Ingredientes: </span>
-    <li *ngFor="let ingrediente of producto?.ingredientes">{{ingrediente}}</li>
+    @for (ingrediente of producto?.ingredientes; track ingrediente) {
+      <li>{{ingrediente}}</li>
+    }
   </ul>
 
   <div>
-    <div class="aptoContainer" *ngIf="producto?.esCeliaco">
-      <img class="apto" src="../../../assets/icons/celiaco.png" alt="Apto Celíaco">
-      <p>Apto Celíaco</p>
-    </div>
+    @if (producto?.esCeliaco) {
+      <div class="aptoContainer">
+        <img class="apto" src="../../../assets/icons/celiaco.png" alt="Apto Celíaco">
+        <p>Apto Celíaco</p>
+      </div>
+    }
 
-    <div class="aptoContainer" *ngIf="producto?.esVegano">
-      <img class="apto" src="../../../assets/icons/vegano.svg" alt="Apto Vegano">
-      <p>Apto Vegano</p>
-    </div>
+    @if (producto?.esVegano) {
+      <div class="aptoContainer">
+        <img class="apto" src="../../../assets/icons/vegano.svg" alt="Apto Vegano">
+        <p>Apto Vegano</p>
+      </div>
+    }
   </div>
   <label for="notas">Notas: </label>
   <textarea [(ngModel)]="notas" name="notas" id="notas" cols="30" rows="10"></textarea>

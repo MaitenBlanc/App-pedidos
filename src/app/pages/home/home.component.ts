@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import {
   Component,
   OnDestroy,
@@ -16,7 +16,7 @@ import { HeaderService } from '../../core/services/header.service';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, TarjetaCategoriaComponent, RouterModule],
+  imports: [TarjetaCategoriaComponent, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

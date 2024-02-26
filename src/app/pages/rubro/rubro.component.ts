@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, WritableSignal, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { TarjetaProductoComponent } from '../../core/components/tarjeta-producto/tarjeta-producto.component';
@@ -9,7 +9,7 @@ import { HeaderService } from '../../core/services/header.service';
 @Component({
   selector: 'app-rubro',
   standalone: true,
-  imports: [TarjetaProductoComponent, CommonModule, RouterModule],
+  imports: [TarjetaProductoComponent, RouterModule],
   templateUrl: './rubro.component.html',
   styleUrl: './rubro.component.scss',
 })

@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import {
   Component,
   EventEmitter,
@@ -11,7 +11,7 @@ import {
 @Component({
   selector: 'app-contador-cantidad',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './contador-cantidad.component.html',
   styleUrl: './contador-cantidad.component.scss',
 })
