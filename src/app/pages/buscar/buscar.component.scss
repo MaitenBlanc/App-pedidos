@@ -32,7 +32,7 @@ img {
   height: 100%;
 }
 
-#contaniner-productos {
+#container-productos {
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -43,4 +43,11 @@ h2 {
   margin-top: 50px;
   font-size: xx-large;
   text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  #container-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

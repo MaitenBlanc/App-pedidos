@@ -17,6 +17,7 @@ h2 {
   display: flex;
   height: 100px;
   background-color: #f7e5f5;
+  border-radius: 10px;
   > div {
     display: flex;
     flex-direction: column;
@@ -138,5 +139,12 @@ dialog {
   p {
     font-size: x-large;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #tarjetasContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

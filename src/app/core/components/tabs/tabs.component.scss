@@ -23,3 +23,16 @@
 .seleccionado {
   background-color: #e8b0e1;
 }
+
+@media screen and (min-width: 800px) {
+  #container {
+    height: 50px;
+  }
+
+  .tab {
+    svg {
+      width: auto;
+      height: 30px;
+    }
+  }
+}

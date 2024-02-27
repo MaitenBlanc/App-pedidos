@@ -36,6 +36,8 @@ button {
   background-color: #f7e5f5;
   border: none;
   border-radius: 15px;
+  width: 70%;
+  margin: auto;
   cursor: pointer;
   &:disabled {
     background-color: lightgray;
@@ -44,4 +46,19 @@ button {
 
 .error {
   color: red;
+}
+
+@media screen and (min-width: 800px) {
+  form {
+    width: 70%;
+    margin: auto;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    margin: auto;
+  }
 }

@@ -9,3 +9,9 @@
 app-tarjeta-categoria {
   width: 100%;
 }
+
+@media screen and (min-width: 800px) {
+  #categorias-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

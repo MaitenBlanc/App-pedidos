@@ -21,7 +21,7 @@
   @defer (when !cargando()) {
 
   @if (productos().length !== 0) {
-  <div id="contaniner-productos">
+  <div id="container-productos">
     @for (producto of productos(); track producto) {
     <app-tarjeta-producto [producto]="producto" [routerLink]="['/articulo', producto.id]">
     </app-tarjeta-producto>

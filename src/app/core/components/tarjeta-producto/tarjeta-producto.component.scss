@@ -5,10 +5,10 @@
   border-radius: 10px;
   overflow: hidden;
   font-size: small;
+  cursor: pointer;
 }
 
 #foto {
-  height: 100%;
   flex: 2;
   background-size: cover;
   background-position: center;
@@ -51,4 +51,10 @@ ul li {
 #precio {
   text-align: end;
   font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  #foto {
+    flex: 1;
+  }
 }

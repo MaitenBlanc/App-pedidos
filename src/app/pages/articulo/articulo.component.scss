@@ -59,4 +59,20 @@ button {
   background-color: #f7e5f5;
   font-size: larger;
   padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  #fotoProducto {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .margenChico {
+    margin-top: 0;
+  }
 }

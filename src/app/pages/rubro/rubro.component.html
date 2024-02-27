@@ -1,4 +1,4 @@
-<section id="contaniner-productos">
+<section id="container-productos">
   @for (producto of productos(); track producto) {
   <app-tarjeta-producto [producto]='producto' [routerLink]="['/articulo', producto.id]"
     routerLinkActive="router-link-active">

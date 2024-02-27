@@ -1,26 +1,29 @@
-<img id="fotoProducto" src="{{producto?.fotoUrl}}" alt="{{producto?.nombre}}">
-
+<div>
+  <img id="fotoProducto" src="{{producto?.fotoUrl}}" alt="{{producto?.nombre}}">
+</div>
 <section class="margenChico">
   <ul>
+    @if (producto?.ingredientes != '') {
     <span>Ingredientes: </span>
     @for (ingrediente of producto?.ingredientes; track ingrediente) {
-      <li>{{ingrediente}}</li>
+    <li>{{ingrediente}}</li>
+    }
     }
   </ul>
 
   <div>
     @if (producto?.esCeliaco) {
-      <div class="aptoContainer">
-        <img class="apto" src="../../../assets/icons/celiaco.png" alt="Apto Celíaco">
-        <p>Apto Celíaco</p>
-      </div>
+    <div class="aptoContainer">
+      <img class="apto" src="../../../assets/icons/celiaco.png" alt="Apto Celíaco">
+      <p>Apto Celíaco</p>
+    </div>
     }
 
     @if (producto?.esVegano) {
-      <div class="aptoContainer">
-        <img class="apto" src="../../../assets/icons/vegano.svg" alt="Apto Vegano">
-        <p>Apto Vegano</p>
-      </div>
+    <div class="aptoContainer">
+      <img class="apto" src="../../../assets/icons/vegano.svg" alt="Apto Vegano">
+      <p>Apto Vegano</p>
+    </div>
     }
   </div>
   <label for="notas">Notas: </label>
